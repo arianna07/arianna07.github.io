@@ -9,7 +9,19 @@ h1 {
   background-color: green;
   color: black; 
 }  
-
+.dropdown {
+    position: relative; 
+    display: inline-block; 
+} 
+.dropdown-content { 
+    display: none; 
+    position: absolute; 
+    background-color: #f9f9f9; 
+    min-width: 160px; 
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); 
+    padding; 12px 16px; 
+    z-index; 1; 
+}
 </style>  
 </head>
 <body> 
@@ -17,8 +29,14 @@ h1 {
  
 
 <h1>Our Games:</h1>
-<iframe src="https://www.codesters.com/embed/v1/class/fa59d9/ad80d44d4dbc434994777dfc5b5aae29/" height="680" width="500"></iframe>
-<p>This is a paragrpah.</p>
+<div class="dropdown"> 
+  <button class="dropbtn">Dropdown</button> 
+  <div class="dropdown-content"> 
+    <p>Game 1</p> 
+  </div> 
+</div>
+
+<p>This is a paragraph.</p> 
 
 <h2>About Us:</h2>
 <p>We are girls who code! We've created some games for you to play based on animals, so enjoy!</p>
